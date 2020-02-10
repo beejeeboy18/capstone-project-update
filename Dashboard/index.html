@@ -1,0 +1,173 @@
+<html lang  = "en">
+<head>
+	<title>PWD SS</title>
+</head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style type="text/css">
+
+  #wrapper{
+  background-color: none;
+  margin: 0 auto;
+  padding: 32px;
+}
+.menu{
+  background-color: none
+}
+#main_menu{
+
+  padding: 4px 0 4px 0; 
+  line-height: 10px;  
+  overflow: hidden; 
+  position: relative;
+
+}
+#main_menu li{
+  display: inline;
+  font-size: 25px;
+  padding: 20px;
+}
+#main_menu a:hover:not(.active){
+  background-color: #0984e3;
+  color: white;
+  padding: 20px;
+
+
+}
+#main_menu a {
+  text-decoration: none;
+  color: ;
+  padding: 8px;
+}
+/*#list1{
+  background-color:none;
+  float: right; ;
+}*/
+#list2{
+  float: right; ;
+  margin-right:;
+  margin-top: 80px;
+  background-color:;
+
+}
+
+.butt {
+  border: 2px solid #0984e3;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  /*INSERT FONT-FAMILY HERE*/
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: -20px;
+  margin-bottom: -20px; 
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.8s; 
+  color:#fff;
+
+}
+
+/*.btn1{
+  
+
+}*/
+/*.btn2{
+  color: #fff;
+}*/
+.btn1:hover{
+  color:#0984e3;
+}
+.btn2:hover{
+  color:#0984e3;
+}
+/*.butt::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #0984e3;
+  z-index: -1;
+  transition: 0.8s;
+}*/
+/*.btn1::before{
+  top: 0;
+  border-radius:  0 0 50% 50%;
+}*/
+/*.btn2::before{
+  bottom: 0;
+  border-radius: 50% 50% 0 0; 
+}*/
+/*.btn2::before{
+  height: 180%;
+}
+/**/.btn1:hover::before{
+  height: 180%;
+}
+.btn2:hover::before{
+  height: 0%;
+}*/
+
+</style>
+
+<body class="bg- text-">
+
+<!--Content Start here-->
+<div class="jumbotron bg-dark" style="height: 250px">
+<header  id = "wrapper">
+      
+ 
+          <div class="menu">          
+            <nav id="main_menu" > 
+                      <ul>
+                           
+                              <li id="list2">
+                                <button class="btn btn-dark" onclick = "link()">About</button>
+                                <button class="btn btn-dark" >Login</button> 
+                                <button class="btn btn-dark">Others!</button>
+                             
+                          </li> 
+                      </ul>                
+         </nav>  
+      </div> 
+  </header>     
+</div>
+
+<div class="jumbotron" id = "content" style="margin-top: -30px; height: 400px; dis">
+  <div class="text-center">
+  <h1 class="">Pwd Support System</h1>    
+  <div class=row>
+    <div class="col-md-6 mx-auto">
+      <form class="mb-10">
+        <div class="mt-100">
+          <img id="btn"src="img/mic2.gif" onclick='recognition.start()' height="200"><br>
+
+          <label>Listening...</label>
+          <p><i id = "result"></i></p>
+          <script src = "voicecommandfunction.js"></script>
+        </div>
+      </form> 
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="jumbotron bg-dark" style="margin-top: -30px;height: 250px" >
+  
+</div>
+
+
+
+
+<!-- content End Here -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
